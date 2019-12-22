@@ -1,6 +1,6 @@
 # CNND
 
-This an pytorch implementation of the paper *Transferred Deep Learning for Anomaly Detection in Hyperspectral Imagery*. The author didn't provide their source code, so I was asked to reproduce the algorithm in this paper by my co-supervisor for his experiments.
+This is an pytorch implementation of the paper *'Transferred Deep Learning for Anomaly Detection in Hyperspectral Imagery'*. The author didn't provide their source code, so I was asked to reproduce the algorithm in this paper by my co-supervisor for his experiments.
 
 ## Envirement
 
@@ -13,7 +13,7 @@ This an pytorch implementation of the paper *Transferred Deep Learning for Anoma
 
 This implementation only support dataset with a format like `A.mat` and A should have two key like `data = A['data'] groundtruth = A['gt']/A['ground_truth']` to sotre data and labels respectively.
 
-Here are the datasets using in this implementation
+Here are the datasets using in this implementation:
 
 - Training data: [Salinas with 189 bands](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes)
 - Testing data: AVIRIS-I.mat, AVIRIS-II.mat
