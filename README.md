@@ -1,6 +1,6 @@
 # CNND
 
-This is an pytorch implementation of the paper *'Transferred Deep Learning for Anomaly Detection in Hyperspectral Imagery'*. The author didn't provide their source code, so I was asked to reproduce the algorithm in this paper by my co-supervisor for his experiments.
+This is a pytorch implementation of the paper *'Transferred Deep Learning for Anomaly Detection in Hyperspectral Imagery'*. The author didn't provide their source code, so I was asked to reproduce the algorithm in this paper by my co-supervisor for his experiments.
 
 ## Envirement
 
