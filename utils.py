@@ -1,6 +1,30 @@
 from scipy import io
 import numpy as np
 
+import matplotlib.pyplot as plt
+from sklearn.metrics import roc_curve, auc
+
+def plot_roc_curve(y, pred, title):
+    # ref: https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#sphx-glr-auto-examples-model-selection-plot-roc-py
+    fpr, tpr, threshold = roc_curve(y, pred)
+    roc_auc = auc(fpr, tpr)
+    print('roc_auc:', roc_auc)
+
+    plt.figure()
+    lw = 2
+    plt.plot(fpr, tpr, color='darkorange',
+             lw=lw, label='ROC curve (area = %0.4f)' % roc_auc)
+    plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title(title)
+    plt.legend(loc="lower right")
+
+    plt.savefig('result/'+title+'.svg', dpi=600)
+    plt.show()
+
 def bbox_mask_generator(inner, outer):
 
     mask = np.ones([outer]*2)
