@@ -22,3 +22,6 @@ Here are the datasets using in this implementation:
 
 You can train it directly using `python train.py` or test you datasets using `python eval.py` for the default setting. You should change the data path if you wana using other datasets.
 
+## Performance
+
+![AVIRIS-I](./result/AVIRIS-I.svg) ![AVVIRIS-II](./result/AVIRIS-II.svg)
