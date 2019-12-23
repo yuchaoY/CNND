@@ -24,8 +24,9 @@ class CNND(nn.Module):
         self.block3 = ConvBlock(40, 30)
         self.block4 = ConvBlock(30, 20)
         self.block5 = ConvBlock(20, 20)
+        # I think the concept of avgpooling in original paper was wrong, so I replace it with 1x1 conv.
         self.pool = nn.Conv1d(20, 1, 1)
-        self.fc = nn.Linear(6, 1)
+        self.fc = nn.Linear(6, 1) # 224 bands->7, 189 bands->6
         self.sigmod = nn.Sigmoid()
 
     def forward(self, x):
@@ -51,11 +52,11 @@ class CNND(nn.Module):
         return x
 
 if __name__ == "__main__":
-    # Hyper-parameters
+
     learning_rate = 0.001
 
     model = CNND()
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.BCELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
     input = torch.rand(124, 1, 189)
