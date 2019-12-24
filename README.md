@@ -26,7 +26,5 @@ You can train it directly using `python train.py` or test you datasets using `py
 
 <div align=center>
   <img src="./result/AVIRIS-I.svg"/>
+  <img src="./result/AVIRIS-II.svg"/>
 </div>
-
-<center>![AVIRIS-I](./result/AVIRIS-I.svg)</center>
-![AVIRIS-II](./result/AVIRIS-II.svg)
