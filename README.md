@@ -28,3 +28,7 @@ You can train it directly using `python train.py` or test you datasets using `py
   <img width="50" src="./result/AVIRIS-I.svg"/>
   <img width="50" src="./result/AVIRIS-II.svg"/>
 </center>
+
+<div align="center">
+<img src="./result/AVIRIS-I.svg" height="300px"><img src="AVIRIS-II.svg" height="300px">    
+</div>
