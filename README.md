@@ -24,5 +24,5 @@ You can train it directly using `python train.py` or test you datasets using `py
 
 ## Performance
 
-![AVIRIS-I](./result/AVIRIS-I.svg)
+<center>![AVIRIS-I](./result/AVIRIS-I.svg)</center>
 ![AVIRIS-II](./result/AVIRIS-II.svg)
