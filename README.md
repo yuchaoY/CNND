@@ -24,7 +24,7 @@ You can train it directly using `python train.py` or test you datasets using `py
 
 ## Performance
 
-<div align=center>
+<center class="half">
   <img src="./result/AVIRIS-I.svg"/>
   <img src="./result/AVIRIS-II.svg"/>
-</div>
+</center>
