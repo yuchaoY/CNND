@@ -1,6 +1,6 @@
 import torch
 
-# from training data
+# for training data
 class DifferPixelPair(torch.utils.data.Dataset):
     def __init__(self, data, labels, transform=None):
         self.transform = transform
