@@ -34,8 +34,6 @@ data_loader = torch.utils.data.DataLoader(dataset=data,
                                            batch_size=1,
                                            shuffle=False)
 
-labels_pred = np.loadtxt(data_name+'.csv', delimiter=',')
-
 # model definition
 model = CNND().to(device)
 model.load_state_dict(torch.load('model.ckpt', map_location=device))
